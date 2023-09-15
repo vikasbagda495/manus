@@ -86,13 +86,20 @@ position: relative;
     height: 100vh;
 }
 
-.all-menu{
+.header{
     position: absolute;
-    top: 20px;
+    top: 0px;
     align-items: center;
     z-index: 1;
     left: 100px;
     right: 100px;
+    padding-bottom: 30px;
+}
+
+.all-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .top-heding{
     position: absolute;
@@ -120,7 +127,7 @@ position: relative;
 .all-menu {
     display: flex;
     justify-content: space-between;
-    padding-top: 43px;
+    padding-top: 30px;
     align-items: center;
 }
 
@@ -1646,6 +1653,19 @@ margin-top: 30px;
 .location-imag img{
     width: 30px;
 }
+
+.fixed-header{
+    position: fixed;
+    color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+
+   
+}
+
 @media screen and (max-width:767px) {
     .container {
         width: 100%;
